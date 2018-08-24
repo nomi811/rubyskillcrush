@@ -7,4 +7,9 @@
 
 puts "Give me a number:"
 num = gets.chomp.to_i
-puts "The answer is always #{-num -= (((num + 5) *2) - 4) /2}."
+
+def always_three(num)
+-num -= (((num + 5) *2) - 4) /2
+end
+
+puts "Always #{always_three(num).to_s}!"
